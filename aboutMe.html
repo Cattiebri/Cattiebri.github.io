@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Santa Ozolina</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="aboutMe.css">
+
+	<link href="https://fonts.googleapis.com/css?family=Exo&display=swap" rel="stylesheet">
+
+	<script
+	src="https://code.jquery.com/jquery-3.4.1.min.js"
+	integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+	crossorigin="anonymous"></script>
+
+	<script type="text/javascript" src="aboutMe.js"></script>
+
+</head>
+<body>
+	<div class="container">
+		<div class="row">
+			<div class="column" onclick="on('overlayEducation')">
+				Education
+			</div>
+			<div class="column" onclick="on('overlayExp')">
+				Previous experience
+			</div>
+			<div class="column" onclick="on('overlaySkill')">
+				Personal skills
+			</div>
+			<div class="column" onclick="on('overlayLang')">
+				Languages
+			</div>
+			<div class="column" onclick="on('overlayPrevProjects')">
+				Previous projects
+			</div>
+			<div class="column" onclick="showtick()">
+				<span id="licence"> Drivers licence</span>
+				<div id="tick" style="display: none;">
+					<span>Category: B</span>
+					<img src="tick.png" alt="mySkill" style="width:20px;">
+				</div>
+			</div>
+			<div class="column" onclick="on('overlayAdditional')">
+				Additional info
+			</div>
+			<div class="column" onclick="on('overlayWhile')">
+				While considering...
+			</div>
+			<div class="column" onclick="on('overlayContacts')">
+				Contacts
+			</div>
+		</div>
+	</div>
+
+	<div id="overlayEducation" class="overlay" onclick="off()">
+		<div style="text-align: center"><b>2014–2016</b>
+			<br> Bachelor Degree in International Marketing and Advertising
+			<br>
+			Rīga Stradiņš University, Riga (Latvia)
+			<br>
+			Bachelor Thesis: Higher Education Marketing in the Context of International Student Recruitment at Rīga Stradiņš University
+			<br>
+			<br>
+			<b>2009–2011</b>
+			<br>
+			AP Degree in International Marketing and Business Management
+			<br>
+			Niels Brock Copenhagen Business College, Copenhagen (Denmark)
+			<br>
+			Internship: The Copenhagen Post - Sales and Marketing Assistant
+			<br>
+			<br>
+			<b>1997–2009</b>
+			<br>
+			Primary Education
+			<br>
+			Riga English Grammar School, Riga (Latvia)
+		</div>
+	</div>
+
+	<div id="overlayExp" class="overlay" onclick="off()" style="text-align: center">
+		<div id="text"><b>2018–Present</b>
+			<br>
+			Expert
+			<br>
+			Central Finance and Contracting Agency (Legal Service and Project Selection
+			Department), Riga (Latvia)
+			<br>
+			<ul>
+				<li>EU Project selection</li>
+				<li>EU Project evaluation</li>
+				<li>Customer consulting</li>
+			</ul>
+			<br>
+			<br>
+			<b>2014–2018</b>
+			<br>
+			Project Coordinator (in International Student Department)
+			<br>
+			Rīga Stradiņš University, Riga (Latvia)
+			<br>
+			Administrating processes of International Student Department:
+			<ul>
+				<li>Coordinating Scholarship and Tuition Fee Discount awarding processes</li>
+				<li>Preparing and adjusting Study Contracts, including Tuition fee calculations</li>
+				<li>Supervising payment schedules</li>
+				<li>Participating in development groups for improvement</li>
+				<li>Resolving issues between the international students and the academic staff</li>
+				<li>Updating Student portal and RSU homepage with relevant information</li>
+			</ul>
+			<br>
+			<br>
+			<b>2013–2014</b>
+			<br>
+			Secretary
+			<br>
+			Ekodoma Ltd., Riga (Latvia)
+			<br>
+			<ul>
+				<li>Managing corporate events</li>
+				<li>Coordinating team-building events</li>
+				<li>Processing correspondence</li>
+			</ul>
+			<br>
+			<br>
+			<b>2004–2009</b>
+			<br>
+			Sport Referee
+			<br>
+			Latvian Volleyball Federation, Riga (Latvia)
+		</div>
+	</div>
+
+	<div id="overlaySkill" class="overlay" onclick="off()">
+		<div id="text">
+			<br>
+			<ul class="skills" style="list-style: none;">
+				<li><div class="card" style="width: 200px;">
+					<b>Communication</b>
+					<img src="communication.PNG" class="card-img-top" alt="mySkill" style="width: 190px;">
+					<div class="card-body">
+						<p class="card-text" style="width:200px">Very good communication skills gained through the international study experience as well as daily communication with international students and clients. Comfortable for both working individually and in a team. Client-oriented and motivated worker.</p>
+					</div></li>
+					<li><div class="card" style="width: 200px;">
+						<b>Organization</b>
+						<img src="organizational.PNG" class="card-img-top" alt="mySkill" style="width: 190px;">
+						<div class="card-body">
+							<p class="card-text" style="width:200px">Good organisational skills gained as project coordinator as well as participant in various event management processes</p>
+						</div></li>
+						<li><div class="card" style="width: 200px;">
+							<b>Responsibility</b>
+							<img src="problemSolving.PNG" class="card-img-top" alt="mySkill" style="width: 190px;">
+							<div class="card-body">
+								<p class="card-text" style="width:200px">Very high sense of responsibility to solve any given task and get to the best solution possible. </p>
+							</div></li>
+							<li><div class="card" style="width: 200px;">
+								<b>Progress</b>
+								<img src="logic.PNG" class="card-img-top" alt="mySkill" style="width: 190px;">
+								<div class="card-body">
+									<p class="card-text" style="width:200px">If observing places for improvement, often forming and suggesting ideas for it. </p>
+								</div></li>
+							</div>
+
+
+						</div>
+					</div>
+
+					<div id="overlayLang" class="overlay" onclick="off()">
+						<div id="text">Overlay Text</div>
+					</div>
+
+					<div id="overlayPrevProjects" class="overlay" onclick="off()">
+						<div id="text">Overlay Text</div>
+					</div>
+					<div id="overlayAdditional" class="overlay" onclick="off()">
+						<div id="text">Overlay Text</div>
+					</div>
+
+					<div id="overlayWhile" class="overlay" onclick="off()">
+						<div id="text">Overlay Text</div>
+					</div>
+
+					<div id="overlayContacts" class="overlay" onclick="off()">
+						<div id="text">Overlay Text</div>
+					</div>
+
+				</body>
+				</html>

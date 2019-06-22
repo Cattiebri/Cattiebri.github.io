@@ -1,0 +1,110 @@
+body{
+	background-image: url(https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/39c34fec-6673-41bf-9a08-c340e74e640b/d9pjlt3-a4be2514-ee7d-4244-ab73-432cf17507f4.png?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7InBhdGgiOiJcL2ZcLzM5YzM0ZmVjLTY2NzMtNDFiZi05YTA4LWMzNDBlNzRlNjQwYlwvZDlwamx0My1hNGJlMjUxNC1lZTdkLTQyNDQtYWI3My00MzJjZjE3NTA3ZjQucG5nIn1dXSwiYXVkIjpbInVybjpzZXJ2aWNlOmZpbGUuZG93bmxvYWQiXX0.05pgVCGUK-xMAliDj4bfw0rhc0sYhAbUoSUonuxTwgM);
+	background-size:cover;
+	background-repeat: no-repeat;
+	background-position: center center;
+	font-family: 'Berkshire Swash', cursive;
+	min-height: 100vh;
+	padding:0;
+	margin:20px 40px 20px 40px;
+	color: orange;
+	font-family: 'Exo', sans-serif;
+}
+main{
+	padding: 10px 20px 10px 20px;
+	
+}
+.container{
+	min-width: 32%;
+	width: 80%;
+	max-width: 100%;
+	margin: auto;
+	font-size: 20px;
+}
+.row{
+	display: flex;
+	flex-flow: row wrap;
+	align-items: center;
+	justify-content: center;
+}
+.column{
+	height: 150px;
+	background-color: rgba(0,0,0,0.75);
+	flex: 1;
+	margin: 10px;
+	border: 2px solid darkred;
+	box-sizing: border-box;
+	flex: 0 0 100%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+.overlay {
+  font-size: 20px;
+  position: fixed; /* Sit on top of the page content */
+  display: none; /* Hidden by default */
+  width: 100%; /* Full width (cover the whole page) */
+  height: 100%; /* Full height (cover the whole page) */
+  top: 0; 
+  left: 0;
+  right: 0;
+  bottom: 0;
+  padding: 10px 30px 15px 20px;
+  align-content: center;
+  background-color: rgba(0,0,0,0.85); /* Black background with opacity */
+  z-index: 2; /* Specify a stack order in case you're using a different order for other elements */
+  cursor: pointer; /* Add a pointer on hover */
+  overflow-y: scroll;
+}
+
+.skills {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  margin: 5px;
+}
+
+
+
+@media only screen and (min-width: 375px){
+	body{
+		/*background-color: yellow;*/
+	}
+}
+@media only screen and (min-width: 425px){
+	body{
+		/*background-color: green;*/
+	}
+}
+@media only screen and (min-width: 768px){
+	body{
+		/*background-color: blue;*/
+	}
+	.column{
+		flex: 0 0 47%;
+	}
+}
+@media only screen and (min-width: 1024px){
+	body{
+	/*	background-color: pink;*/
+	}
+	.column{
+		flex: 0 0 30%;
+	}
+}
+@media only screen and (min-width: 1440px){
+	body{
+		/*background-color: orange;*/
+	}
+	.column{
+		flex: 0 0 30%;
+	}
+}
+@media only screen and (min-width: 2560px){
+	body{
+		/*background-color: purple;*/
+	}
+	.column{
+		flex: 1 0 30%;
+	}
+}
