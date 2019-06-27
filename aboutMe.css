@@ -1,0 +1,266 @@
+body{
+	background-image: url(https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/39c34fec-6673-41bf-9a08-c340e74e640b/d9pjlt3-a4be2514-ee7d-4244-ab73-432cf17507f4.png?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7InBhdGgiOiJcL2ZcLzM5YzM0ZmVjLTY2NzMtNDFiZi05YTA4LWMzNDBlNzRlNjQwYlwvZDlwamx0My1hNGJlMjUxNC1lZTdkLTQyNDQtYWI3My00MzJjZjE3NTA3ZjQucG5nIn1dXSwiYXVkIjpbInVybjpzZXJ2aWNlOmZpbGUuZG93bmxvYWQiXX0.05pgVCGUK-xMAliDj4bfw0rhc0sYhAbUoSUonuxTwgM);
+	background-size:cover;
+	background-repeat: no-repeat;
+	background-position: center center;
+	font-family: 'Berkshire Swash', cursive;
+	min-height: 100vh;
+	padding: 20px 40px 20px 40px;
+	color: orange;
+	font-family: 'Exo', sans-serif;
+}
+
+
+.vissTeksts{
+	margin: 0 auto;
+	padding: 10px 20px 10px 20px;
+	width: 80%;
+}
+
+.navbar{
+	background-color: #f69e0d;
+	border-bottom: 2px solid darkred;
+	margin: 0;
+	top:0;
+	width:100%;
+	margin-bottom: 50px;
+}
+.container{
+	min-width: 32%;
+	width: 100%;
+	max-width: 100%;
+	margin: auto;
+	font-size: 20px;
+}
+.card-img-top{
+	width: unset;
+}
+.row{
+	display: flex;
+	flex-flow: row wrap;
+	align-items: center;
+	justify-content: center;
+}
+.column{
+	height: 150px;
+	background-color: rgba(0,0,0,0.75);
+	flex: 1 0 30%;
+	margin: 10px;
+	border: 2px solid darkred;
+	box-sizing: border-box;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+.column:hover{
+	cursor: pointer;
+}
+.overlay {
+	font-size: 20px;
+	position: fixed; /* Sit on top of the page content */
+	display: none; /* Hidden by default */
+	width: 100%; /* Full width (cover the whole page) */
+	height: 100%; /* Full height (cover the whole page) */
+	top: 55px; 
+	left: 0;
+	right: 0;
+	bottom: 0;
+	padding: 10px 30px 15px 20px;
+	align-content: center;
+	text-align: center;
+	background-color: rgba(0,0,0,0.85); /* Black background with opacity */
+	z-index: 2; /* Specify a stack order in case you're using a different order for other elements */
+	cursor: pointer; /* Add a pointer on hover */
+	overflow-y: scroll;
+	list-style-position: inside;
+}
+.overlay.collapse {
+	font-size: 20px;
+	padding: 10px 30px 15px 20px;
+	background-color: rgba(0,0,0,0.85); 
+	z-index: 3; 
+	cursor: pointer; 
+	overflow-y: scroll;
+}
+.skillKlase{
+	float: left;
+	margin: 3px;
+	align-items: inherit;
+}
+
+#myContacts{
+	width: 100%;
+	margin: auto;
+	padding: auto;
+	text-align: center;
+	background-color: rgba(0,0,0,0.85);
+	border: 2px solid darkred;
+}
+
+.gitLink{
+	text-decoration: none;
+}
+
+.betweenerLight{
+	text-align: center;
+	margin: 3px auto;
+	background-color: darkred;
+	height: 1px;
+	width: 30%;
+}
+.betweenerBold{
+	text-align: center;
+	margin: 2px auto;
+	background-color: orange;
+	height: 5px;
+	width: 30%;
+}
+.container.bulleti{
+	display: flex;
+    justify-content: center;
+}
+.saraksts{
+	display: flex;
+    align-items: start;
+    flex-direction: column;
+}
+.contactContainer{
+	padding: 0 30px;
+}
+
+.card{
+	background:none;
+	text-align: center;
+}
+.mb-3{
+	margin-top: 70px;
+	background-color: rgba(0,0,0,0.85);
+	border: 2px solid darkred;
+	/*background-size: 80%;*/
+	font-size: 20px;
+}
+.card-img{
+	max-width: 250px;
+	max-height: 250px;
+	border-radius: 50%;
+	margin: 15px;
+}
+.card-title{
+	font-size: 25px;
+}
+.btn {
+	color: orange;
+	background-color: rgba(0,0,0,0.85);
+	font-style: bold;
+	border: 4px solid rgba(70, 92, 66, 1);
+}
+
+button:focus {outline:0;}
+
+.btn:hover{
+	color: orange;
+	background-color: rgba(70, 92, 66, 1);
+	border: 4px solid rgba(0,0,0,0.85);
+}
+.progress{
+	margin-left: 50px;
+	margin-right: 50px;
+	height: 30px;
+	position: relative;
+}
+.progress span {
+    position: absolute;
+    display: block;
+    width: 100%;
+    color: black;
+    font-weight: bold;
+ }
+
+
+a:link {
+	text-decoration: none;
+	color: orange;
+}
+
+a:visited {
+	text-decoration: none;
+	color: orange;
+}
+
+a:hover {
+	text-decoration: none;
+	color: orange;
+}
+
+a:active {
+	text-decoration: none;
+	color: orange;
+}
+
+footer{
+	background-color: rgba(70, 92, 66, 1);
+	text-decoration: inherit;
+	text-align: center;
+	margin: 0;
+	padding: 20px;
+	left: 0;
+	right: 0;
+	position: absolute;
+}
+
+
+/*@media only screen and (min-width: 360px) {
+	.card-img{
+		max-width: 150px;
+		max-height: 150px;
+		margin: 5px;
+	}
+	.mb-3{
+		margin-top: 80px;
+		max-width: 95%;
+		font-size: 15px;
+	}
+}/*
+*/
+	/*@media only screen and (min-width: 375px){
+		body{
+			/*background-color: yellow;*/
+		/*}
+		}*/
+	/*@media only screen and (min-width: 425px){
+		body{*/
+			/*background-color: green;*/
+	/*	}
+	}
+	@media only screen and (min-width: 768px){
+		body{*/
+			/*background-color: blue;*/
+		/*}
+		.column{
+			flex: 0 0 46%;
+		}
+	}
+	@media only screen and (min-width: 1024px){
+		body{*/
+			/*	background-color: pink;*/
+		/*}
+		.column{
+			flex: 0 0 30%;
+		}
+	}
+	@media only screen and (min-width: 1440px){
+		body{*/
+			/*background-color: orange;*/
+		/*}
+		.column{
+			flex: 0 0 30%;
+		}
+	}
+	@media only screen and (min-width: 2560px){
+		body{*/
+			/*background-color: purple;*/
+	/*	}
+		.column{
+			flex: 1 0 30%;
+		}
+	}*/
