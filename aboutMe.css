@@ -105,6 +105,7 @@ body{
 	text-align: center;
 	background-color: rgba(0,0,0,0.85);
 	border: 2px solid darkred;
+	transition: height 400ms;
 }
 
 .gitLink{
@@ -186,6 +187,12 @@ button:focus {outline:0;}
 	font-weight: bold;
 }
 
+#errorMsg{
+	display: none;
+}
+
+
+
 
 a:link {
 	text-decoration: none;
@@ -238,23 +245,32 @@ footer{
 		/*}
 		}*/
 
-		#errorMsg{
-			display: none;
-		}
+		
 
-	@media only screen and (max-width: 666px){
-		 #errorMsg{
-		 	display: block;
-		 	margin-top: 60px;
-		 }
-		 .big-container{
-		 	display: none;
-		 }
+		@media only screen and (max-width: 666px){
+			#errorMsg{
+				display: block;
+				margin-top: 60px;
+			}
+			.big-container{
+				display: none;
+			}
+
 		}
 		@media only screen and (max-width: 800px){
 			#cardLang {
 				flex-direction: column;
 			}
+			#bildeMe{
+				margin: auto;
+			}
+			#aboutMeCont{
+				flex-direction: column;
+			}
+			#coverCont{
+				margin-top: 100px;
+			}
+			
 		}
 
 		@media only screen and (max-width: 1080px){
@@ -268,7 +284,7 @@ footer{
 
 			#skillCards {
 				flex-direction: column;
-/*				width: 100%;*/
+				/*				width: 100%;*/
 			}
 		}
 	/*@media only screen and (max-width: 1440px){

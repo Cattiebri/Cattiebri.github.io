@@ -56,10 +56,10 @@
 	<div class="vissTeksts">
 
 		<div class="container-fluid p-0">
-			<div class="card mb-3">
-				<div class="row no-gutters">
+			<div class="card mb-3" id="coverCont">
+				<div class="row no-gutters" id="aboutMeCont">
 					<div class="col-md-4">
-						<img src="seja.png" class="card-img" alt="faceOfSanta">
+						<img src="seja.png" class="card-img" id="bildeMe" alt="faceOfSanta">
 					</div>
 					<div class="col-md-8">
 						<div class="card-body">
@@ -90,9 +90,9 @@
 					Previous projects
 				</a>
 				<div class="column" onclick="showtick()">
-					<span id="licence"> Drivers licence</span>
+					<span id="licence"> Driver's licence</span>
 					<div id="tick" style="display: none;">
-						<span>Category: B</span>
+						<span>Category: B </span>
 						<img src="tick.png" alt="mySkill" style="width:20px;">
 					</div>
 				</div>
@@ -118,7 +118,9 @@
 		</div>
 
 		<div id="overlayEducation" class="overlay" onclick="off()">
-			<div style="text-align: center" style="margin-bottom: 60px;"><b>2014–2016</b>
+			<div style="text-align: center" style="margin-bottom: 60px;">
+				<br>
+				<b>2014–2016</b>
 				<br> Bachelor Degree in International Marketing and Advertising
 				<br>
 				Rīga Stradiņš University, Riga (Latvia)
@@ -147,301 +149,304 @@
 			<div style="margin-bottom: 50px;">
 				<div class="card w-100">
 					<div class="card-body">
-						<h5 class="card-title"><b>2018–Present</b></h5>
-						<div class="card-text">
-							Expert (in Legal Service and Project Selection
-							Department)
+						<h5 class="card-title">
 							<br>
-							Central Finance and Contracting Agency, Riga (Latvia)
-							<br>
-							Administrating processes of EU Project selection:
-							<br>
-							<div  class="container bulleti">
-								<ul class="saraksts">
-									<li>EU Project selection</li>
-									<li>EU Project evaluation</li>
-									<li>Customer consulting</li>
-								</ul>
+							<b>2018–Present</b></h5>
+							<div class="card-text">
+								Expert (in Legal Service and Project Selection
+								Department)
+								<br>
+								Central Finance and Contracting Agency, Riga (Latvia)
+								<br>
+								Administrating processes of EU Project selection:
+								<br>
+								<div  class="container bulleti">
+									<ul class="saraksts">
+										<li>EU Project selection</li>
+										<li>EU Project evaluation</li>
+										<li>Customer consulting</li>
+									</ul>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="card w-100">
+						<div class="card-body">
+							<h5 class="card-title">
+								<b>2014–2018</b></h5>
+								<p class="card-text">Project Coordinator (in International Student Department)
+									<br>
+									Rīga Stradiņš University, Riga (Latvia)
+									<br>
+									Administrating processes of International Student Department:
+									<div class="container bulleti">
+										<ul class="saraksts">
+											<li>Coordinating Scholarship and Tuition Fee Discount awarding processes</li>
+											<li>Preparing and adjusting Study Contracts, including Tuition fee calculations</li>
+											<li>Supervising payment schedules</li>
+											<li>Participating in development groups for improvement</li>
+											<li>Resolving issues between the international students and the academic staff</li>
+											<li>Updating Student portal and RSU homepage with relevant information</li>
+										</ul>
+									</div>
+								</p>
+							</div>
+						</div>
+						<div class="card w-100">
+							<div class="card-body">
+								<h5 class="card-title"><b>2013–2014</b></h5>
+								<div class="card-text">
+									Secretary
+									<br>
+									Ekodoma Ltd., Riga (Latvia)
+									<br>
+									<div  class="container bulleti">
+										<ul class="saraksts">
+											<li>Managing corporate events</li>
+											<li>Coordinating team-building events</li>
+											<li>Processing correspondence</li>
+										</ul>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="card w-100">
+							<div class="card-body">
+								<h5 class="card-title"><b>2004–2009</b></h5>
+								<div class="card-text">
+									Sport Referee
+									<br>
+									Latvian Volleyball Federation, Riga (Latvia)
+								</div>
 							</div>
 						</div>
 					</div>
 				</div>
-				<div class="card w-100">
-					<div class="card-body">
-						<h5 class="card-title"><b>2014–2018</b></h5>
-						<p class="card-text">Project Coordinator (in International Student Department)
-							<br>
-							Rīga Stradiņš University, Riga (Latvia)
-							<br>
-							Administrating processes of International Student Department:
-							<div class="container bulleti">
-								<ul class="saraksts">
-									<li>Coordinating Scholarship and Tuition Fee Discount awarding processes</li>
-									<li>Preparing and adjusting Study Contracts, including Tuition fee calculations</li>
-									<li>Supervising payment schedules</li>
-									<li>Participating in development groups for improvement</li>
-									<li>Resolving issues between the international students and the academic staff</li>
-									<li>Updating Student portal and RSU homepage with relevant information</li>
-								</ul>
-							</div>
-						</p>
+			</div>
+		</div>
+
+		<div class="container">
+			<div id="overlaySkill" class="overlay" onclick="off()">
+				<div class="card-group" id="skillCards">
+					<div class="card">
+						<img class="card-img-top mx-auto d-block" src="communication.PNG" alt="Communication">
+						<div class="card-body">
+							<h5 class="card-title"><b>Communication</b></h5>
+							<p class="card-text">Very good communication skills gained through the international study experience as well as daily communication with international students and clients. Comfortable for both working individually and in a team. Client-oriented and motivated worker.</p>
+						</div>
+
 					</div>
-				</div>
-				<div class="card w-100">
-					<div class="card-body">
-						<h5 class="card-title"><b>2013–2014</b></h5>
-						<div class="card-text">
-							Secretary
-							<br>
-							Ekodoma Ltd., Riga (Latvia)
-							<br>
-							<div  class="container bulleti">
-								<ul class="saraksts">
-									<li>Managing corporate events</li>
-									<li>Coordinating team-building events</li>
-									<li>Processing correspondence</li>
-								</ul>
-							</div>
+					<div class="card">
+						<img class="card-img-top mx-auto d-block" src="organizational.PNG" alt="Organization">
+						<div class="card-body">
+							<h5 class="card-title"><b>Organization</b></h5>
+							<p class="card-text">Good organisational skills gained as project coordinator as well as participant in various event management processes</p>
+						</div>
+
+					</div>
+					<div class="card">
+						<img class="card-img-top mx-auto d-block" src="problemSolving.PNG" alt="problemSolving">
+						<div class="card-body">
+							<h5 class="card-title"><b>Responsibility</b></h5>
+							<p class="card-text">Very high sense of responsibility to solve any given task and get to the best solution possible.</p>
 						</div>
 					</div>
-				</div>
-				<div class="card w-100">
-					<div class="card-body">
-						<h5 class="card-title"><b>2004–2009</b></h5>
-						<div class="card-text">
-							Sport Referee
-							<br>
-							Latvian Volleyball Federation, Riga (Latvia)
+					<div class="card">
+						<img class="card-img-top mx-auto d-block" src="logic.PNG" alt="logic">
+						<div class="card-body">
+							<h5 class="card-title"><b>Progress</b></h5>
+							<p class="card-text" style="margin-bottom: 50px;">If observing places for improvement, often forming and suggesting ideas for it.</p>
 						</div>
 					</div>
 				</div>
 			</div>
 		</div>
+
+		<div class="container">
+			<div id="overlayLang" class="overlay" onclick="off()">
+				<div class="card-columns">
+					<div class="card">
+					</div>
+					<div class="card">
+						<div class="card-body">
+							<h5 class="card-title" style="font-size:24px"><b>Latvian - mother-language</b></h5>
+						</div>
+					</div>
+					<div class="card">
+					</div>
+				</div>
+				<div class="card-deck" id="cardLang">
+					<div class="card">
+						<div class="card-body">
+							<h5 class="card-title"><b>English</b></h5>
+							<div class="progress">
+								<div class="progress-bar" role="progressbar" style="width: 95%" aria-valuenow="95" aria-valuemin="0" aria-valuemax="100"><span>Understanding - C2 </span></div>
+							</div>
+							<div class="progress">
+								<div class="progress-bar bg-success" role="progressbar" style="width: 90%" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"><span>Speaking - C1</span></div>
+							</div>
+							<div class="progress">
+								<div class="progress-bar bg-info" role="progressbar" style="width: 85%" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100"><span>Writing - C1</span></div>
+							</div>
+						</div>
+
+					</div>
+					<div class="card">
+						<div class="card-body">
+							<h5 class="card-title"><b>Russian</b></h5>
+							<div class="progress">
+								<div class="progress-bar" role="progressbar" style="width: 75%" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"><span>Understanding - B2 </span></div>
+							</div>
+							<div class="progress">
+								<div class="progress-bar bg-success" role="progressbar" style="width: 65%" aria-valuenow="65" aria-valuemin="0" aria-valuemax="100"><span>Speaking - B1</span></div>
+							</div>
+							<div class="progress">
+								<div class="progress-bar bg-info" role="progressbar" style="width: 50%" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"><span>Writing - A2</span></div>
+							</div>
+						</div>
+
+					</div>
+					<div class="card">
+						<div class="card-body">
+							<h5 class="card-title"><b>Danish</b></h5>
+							<div class="progress">
+								<div class="progress-bar" role="progressbar" style="width: 60%" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100"><span>Understanding - B1 </span></div>
+							</div>
+							<div class="progress">
+								<div class="progress-bar bg-success" role="progressbar" style="width: 50%" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"><span>Speaking - A2</span></div>
+							</div>
+							<div class="progress">
+								<div class="progress-bar bg-info" role="progressbar" style="width: 55%" aria-valuenow="55" aria-valuemin="0" aria-valuemax="100"><span>Writing - A2</span></div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="container">
+			<div id="overlayAdditional" class="overlay" onclick="off()">
+				<div>
+					<div class="card w-100">
+						<div class="card-body">
+							<h5 class="card-title"><b>Courses</b></h5>
+							<div class="card-text">
+								<i><u> In progress</u></i> - Riga Coding School (2019): Basics of Programming (C#, Java, CSS, JavaScript, Bootstrap, Vue)
+								<br>
+								Academy of Intelligence (2016-2017): Module for Personal Growth
+							</div>
+						</div>
+
+					</div>
+					<div class="card w-100">
+						<div class="card-body">
+							<h5 class="card-title"><b>Certifications</b></h5>
+							<p class="card-text">Graduate of Riga Volleyball School (1999-2009)</p>
+						</div>
+					</div>
+					<div class="card w-100">
+						<div class="card-body">
+							<h5 class="card-title"><b>Voluntary experience</b></h5>
+							<div class="card-text" style="margin-bottom: 50px;">
+								Copenhagen Volunteers (2010-2012): event coordinator, assistant, guide
+								<br>
+								Copenhagen Post (2011): distribution assistant, event assistant
+								<br>
+								Latvian Red Cross Youth (2007-2009): event coordinator, member, homepage admin
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div id="overlayWhile" class="overlay" onclick="off()">
+
+			<div id="errorMsg"> Sorry, this content is not available on your screen parameters.</div>
+			<div class="big-container">
+				<div class="heading">
+					<h1 class="title">3072</h1>
+					<div class="score-container">0</div>
+				</div>
+				<p class="game-intro">Join the numbers and get to the <strong>3072 tile!</strong></p>
+
+				<div class="game-container">
+					<div class="game-message">
+						<p></p>
+						<div class="lower">
+							<a class="retry-button">Close</a>
+						</div>
+					</div>
+
+					<div class="grid-container">
+						<div class="grid-row">
+							<div class="grid-cell"></div>
+							<div class="grid-cell"></div>
+							<div class="grid-cell"></div>
+							<div class="grid-cell"></div>
+						</div>
+						<div class="grid-row">
+							<div class="grid-cell"></div>
+							<div class="grid-cell"></div>
+							<div class="grid-cell"></div>
+							<div class="grid-cell"></div>
+						</div>
+						<div class="grid-row">
+							<div class="grid-cell"></div>
+							<div class="grid-cell"></div>
+							<div class="grid-cell"></div>
+							<div class="grid-cell"></div>
+						</div>
+						<div class="grid-row">
+							<div class="grid-cell"></div>
+							<div class="grid-cell"></div>
+							<div class="grid-cell"></div>
+							<div class="grid-cell"></div>
+						</div>
+					</div>
+
+					<div class="tile-container">
+
+					</div>
+				</div>
+
+				<hr>
+				<p>
+					Code-source: <a href="https://codepen.io/camsong/pen/wcKrg" target="_blank">https://codepen.io/camsong/pen/wcKrg</a>
+					<br>
+					Altered by: Santa Ozolina
+
+				</p>
+			</div>
+
+
+
+			<script src='https://cdnjs.cloudflare.com/ajax/libs/hammer.js/1.0.6/hammer.min.js'></script>
+
+
+
+			<script  src="./game.js"></script>
+
+		</div>
+
+		<div id="overlayContacts" class="overlay collapse" onclick="collapse()">
+			<div>Overlay Text</div>
+		</div>
+		<br>
+
+		<div class="container" style="width: 79%;">
+			<button type="button" class="btn btn-secondary btn-lg btn-block"><a href="CV-Santa-Ozolina-EN.pdf" target="_blank">Download CV in pdf</a></button>
+		</div>
+
+		<br>
 	</div>
-</div>
-
-<div class="container">
-	<div id="overlaySkill" class="overlay" onclick="off()">
-		<div class="card-group" id="skillCards">
-			<div class="card">
-				<img class="card-img-top mx-auto d-block" src="communication.PNG" alt="Communication">
-				<div class="card-body">
-					<h5 class="card-title"><b>Communication</b></h5>
-					<p class="card-text">Very good communication skills gained through the international study experience as well as daily communication with international students and clients. Comfortable for both working individually and in a team. Client-oriented and motivated worker.</p>
-				</div>
-
-			</div>
-			<div class="card">
-				<img class="card-img-top mx-auto d-block" src="organizational.PNG" alt="Organization">
-				<div class="card-body">
-					<h5 class="card-title"><b>Organization</b></h5>
-					<p class="card-text">Good organisational skills gained as project coordinator as well as participant in various event management processes</p>
-				</div>
-
-			</div>
-			<div class="card">
-				<img class="card-img-top mx-auto d-block" src="problemSolving.PNG" alt="problemSolving">
-				<div class="card-body">
-					<h5 class="card-title"><b>Responsibility</b></h5>
-					<p class="card-text">Very high sense of responsibility to solve any given task and get to the best solution possible.</p>
-				</div>
-			</div>
-			<div class="card">
-				<img class="card-img-top mx-auto d-block" src="logic.PNG" alt="logic">
-				<div class="card-body">
-					<h5 class="card-title"><b>Progress</b></h5>
-					<p class="card-text" style="margin-bottom: 50px;">If observing places for improvement, often forming and suggesting ideas for it.</p>
-				</div>
-			</div>
-		</div>
-	</div>
-</div>
-
-<div class="container">
-	<div id="overlayLang" class="overlay" onclick="off()">
-		<div class="card-columns">
-			<div class="card">
-			</div>
-			<div class="card">
-				<div class="card-body">
-					<h5 class="card-title" style="font-size:24px"><b>Latvian - mother-language</b></h5>
-				</div>
-			</div>
-			<div class="card">
-			</div>
-		</div>
-		<div class="card-deck" id="cardLang">
-			<div class="card">
-				<div class="card-body">
-					<h5 class="card-title"><b>English</b></h5>
-					<div class="progress">
-						<div class="progress-bar" role="progressbar" style="width: 95%" aria-valuenow="95" aria-valuemin="0" aria-valuemax="100"><span>Understanding - C2 </span></div>
-					</div>
-					<div class="progress">
-						<div class="progress-bar bg-success" role="progressbar" style="width: 90%" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"><span>Speaking - C1</span></div>
-					</div>
-					<div class="progress">
-						<div class="progress-bar bg-info" role="progressbar" style="width: 85%" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100"><span>Writing - C1</span></div>
-					</div>
-				</div>
-
-			</div>
-			<div class="card">
-				<div class="card-body">
-					<h5 class="card-title"><b>Russian</b></h5>
-					<div class="progress">
-						<div class="progress-bar" role="progressbar" style="width: 75%" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"><span>Understanding - B2 </span></div>
-					</div>
-					<div class="progress">
-						<div class="progress-bar bg-success" role="progressbar" style="width: 65%" aria-valuenow="65" aria-valuemin="0" aria-valuemax="100"><span>Speaking - B1</span></div>
-					</div>
-					<div class="progress">
-						<div class="progress-bar bg-info" role="progressbar" style="width: 50%" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"><span>Writing - A2</span></div>
-					</div>
-				</div>
-
-			</div>
-			<div class="card">
-				<div class="card-body">
-					<h5 class="card-title"><b>Danish</b></h5>
-					<div class="progress">
-						<div class="progress-bar" role="progressbar" style="width: 60%" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100"><span>Understanding - B1 </span></div>
-					</div>
-					<div class="progress">
-						<div class="progress-bar bg-success" role="progressbar" style="width: 50%" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"><span>Speaking - A2</span></div>
-					</div>
-					<div class="progress">
-						<div class="progress-bar bg-info" role="progressbar" style="width: 55%" aria-valuenow="55" aria-valuemin="0" aria-valuemax="100"><span>Writing - A2</span></div>
-					</div>
-				</div>
-			</div>
-		</div>
-	</div>
-</div>
-
-<div class="container">
-	<div id="overlayAdditional" class="overlay" onclick="off()">
-		<div>
-			<div class="card w-100">
-				<div class="card-body">
-					<h5 class="card-title"><b>Courses</b></h5>
-					<div class="card-text">
-						<i><u> In progress</u></i> - Riga Coding School (2019): Basics of Programming (C#, Java, CSS, JavaScript, Bootstrap, Vue)
-						<br>
-						Academy of Intelligence (2016-2017): Module for Personal Growth
-					</div>
-				</div>
-
-			</div>
-			<div class="card w-100">
-				<div class="card-body">
-					<h5 class="card-title"><b>Certifications</b></h5>
-					<p class="card-text">Graduate of Riga Volleyball School (1999-2009)</p>
-				</div>
-			</div>
-			<div class="card w-100">
-				<div class="card-body">
-					<h5 class="card-title"><b>Voluntary experience</b></h5>
-					<div class="card-text" style="margin-bottom: 50px;">
-						Copenhagen Volunteers (2010-2012): event coordinator, assistant, guide
-						<br>
-						Copenhagen Post (2011): distribution assistant, event assistant
-						<br>
-						Latvian Red Cross Youth (2007-2009): event coordinator, member, homepage admin
-					</div>
-				</div>
-			</div>
-		</div>
-	</div>
-</div>
-
-<div id="overlayWhile" class="overlay" onclick="off()">
-
-	<div id="errorMsg"> Sorry, this content is not available on your screen parameters.</div>
-	<div class="big-container">
-		<div class="heading">
-			<h1 class="title">3072</h1>
-			<div class="score-container">0</div>
-		</div>
-		<p class="game-intro">Join the numbers and get to the <strong>3072 tile!</strong></p>
-
-		<div class="game-container">
-			<div class="game-message">
-				<p></p>
-				<div class="lower">
-					<a class="retry-button">Close</a>
-				</div>
-			</div>
-
-			<div class="grid-container">
-				<div class="grid-row">
-					<div class="grid-cell"></div>
-					<div class="grid-cell"></div>
-					<div class="grid-cell"></div>
-					<div class="grid-cell"></div>
-				</div>
-				<div class="grid-row">
-					<div class="grid-cell"></div>
-					<div class="grid-cell"></div>
-					<div class="grid-cell"></div>
-					<div class="grid-cell"></div>
-				</div>
-				<div class="grid-row">
-					<div class="grid-cell"></div>
-					<div class="grid-cell"></div>
-					<div class="grid-cell"></div>
-					<div class="grid-cell"></div>
-				</div>
-				<div class="grid-row">
-					<div class="grid-cell"></div>
-					<div class="grid-cell"></div>
-					<div class="grid-cell"></div>
-					<div class="grid-cell"></div>
-				</div>
-			</div>
-
-			<div class="tile-container">
-
-			</div>
-		</div>
-
-		<hr>
-		<p>
-			Code-source: <a href="https://codepen.io/camsong/pen/wcKrg" target="_blank">https://codepen.io/camsong/pen/wcKrg</a>
-			<br>
-			Altered by: Santa Ozolina
-
-		</p>
-	</div>
-
-
-
-	<script src='https://cdnjs.cloudflare.com/ajax/libs/hammer.js/1.0.6/hammer.min.js'></script>
-
-
-
-	<script  src="./game.js"></script>
-
-</div>
-
-<div id="overlayContacts" class="overlay collapse" onclick="collapse()">
-	<div>Overlay Text</div>
-</div>
-<br>
-
-<div class="container" style="width: 79%;">
-	<button type="button" class="btn btn-secondary btn-lg btn-block"><a href="CV-Santa-Ozolina-EN.pdf" target="_blank">Download CV in pdf</a></button>
-</div>
-
-<br>
-</div>
-<footer>
-	Created by: Santa Ozolina
-	<br>
-	@ 2019 
-	<br>
-	All rights reserved
-</footer>
+	<footer>
+		Created by: Santa Ozolina
+		<br>
+		@ 2019 
+		<br>
+		All rights reserved
+	</footer>
 
 
 </body>
