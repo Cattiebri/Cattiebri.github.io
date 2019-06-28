@@ -35,6 +35,16 @@ body{
 .card-img-top{
 	width: unset;
 }
+
+#skillCards{
+	/*margin: auto 100px;*/
+	min-width: 270px;
+}
+
+#selectors .column{
+	min-width: 250px;
+}
+
 .row{
 	display: flex;
 	flex-flow: row wrap;
@@ -117,12 +127,12 @@ body{
 }
 .container.bulleti{
 	display: flex;
-    justify-content: center;
+	justify-content: center;
 }
 .saraksts{
 	display: flex;
-    align-items: start;
-    flex-direction: column;
+	align-items: start;
+	flex-direction: column;
 }
 .contactContainer{
 	padding: 0 30px;
@@ -136,7 +146,7 @@ body{
 	margin-top: 70px;
 	background-color: rgba(0,0,0,0.85);
 	border: 2px solid darkred;
-	/*background-size: 80%;*/
+	min-width: 270px;
 	font-size: 20px;
 }
 .card-img{
@@ -169,12 +179,12 @@ button:focus {outline:0;}
 	position: relative;
 }
 .progress span {
-    position: absolute;
-    display: block;
-    width: 100%;
-    color: black;
-    font-weight: bold;
- }
+	position: absolute;
+	display: block;
+	width: 100%;
+	color: black;
+	font-weight: bold;
+}
 
 
 a:link {
@@ -209,7 +219,7 @@ footer{
 }
 
 
-/*@media only screen and (min-width: 360px) {
+/*@media only screen and (max-width: 360px) {
 	.card-img{
 		max-width: 150px;
 		max-height: 150px;
@@ -222,33 +232,46 @@ footer{
 	}
 }/*
 */
-	/*@media only screen and (min-width: 375px){
+	/*@media only screen and (max-width: 375px){
 		body{
 			/*background-color: yellow;*/
 		/*}
 		}*/
-	/*@media only screen and (min-width: 425px){
-		body{*/
-			/*background-color: green;*/
-	/*	}
-	}
-	@media only screen and (min-width: 768px){
-		body{*/
-			/*background-color: blue;*/
-		/*}
-		.column{
-			flex: 0 0 46%;
+
+		#errorMsg{
+			display: none;
 		}
-	}
-	@media only screen and (min-width: 1024px){
-		body{*/
-			/*	background-color: pink;*/
-		/*}
-		.column{
-			flex: 0 0 30%;
+
+	@media only screen and (max-width: 666px){
+		 #errorMsg{
+		 	display: block;
+		 	margin-top: 60px;
+		 }
+		 .big-container{
+		 	display: none;
+		 }
 		}
-	}
-	@media only screen and (min-width: 1440px){
+		@media only screen and (max-width: 800px){
+			#cardLang {
+				flex-direction: column;
+			}
+		}
+
+		@media only screen and (max-width: 1080px){
+			.column{
+				flex: 0 0 45%;
+			}
+			body{
+				margin: 0;
+				padding: 0;
+			}
+
+			#skillCards {
+				flex-direction: column;
+/*				width: 100%;*/
+			}
+		}
+	/*@media only screen and (max-width: 1440px){
 		body{*/
 			/*background-color: orange;*/
 		/*}
@@ -256,7 +279,7 @@ footer{
 			flex: 0 0 30%;
 		}
 	}
-	@media only screen and (min-width: 2560px){
+	@media only screen and (max-width: 2560px){
 		body{*/
 			/*background-color: purple;*/
 	/*	}

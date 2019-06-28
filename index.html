@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>Santa Ozolina</title>
+	<title>Santa Ozolina - CV</title>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 
@@ -12,6 +12,8 @@
 	<link rel="stylesheet" type="text/css" href="aboutMe.css">
 
 	<link href="https://fonts.googleapis.com/css?family=Exo&display=swap" rel="stylesheet">
+
+	<link rel="icon" type="image/png" href="seja.png">
 
 	<script
 	src="https://code.jquery.com/jquery-3.4.1.min.js"
@@ -41,7 +43,7 @@
 					<a class="nav-link" onclick="on('overlayWhile')" href="#">While considering...</a>
 				</li>
 				<li class="nav-item">
-					<a class="nav-link" href="./CV-Santa-Ozolina-EN.pdf">Download CV</a>
+					<a class="nav-link" target="_blank" href="./CV-Santa-Ozolina-EN.pdf">Download CV</a>
 				</li>
 				<li class="nav-item">
 					<a class="nav-link" href="#myContacts" data-toggle="collapse" data-target="#myContacts" onclick="collapse()" >Contacts</a>
@@ -62,7 +64,7 @@
 					<div class="col-md-8">
 						<div class="card-body">
 							<h5 class="card-title" style="font-size: 25px;"><b>About me</b></h5>
-							<p class="card-text">I enjoy working in teamwork and motivating others to bring out the best results. My previous study and work experience has made me see that positive attitude and positive behavior is the best way to approach the team and the client. I enjoy working with a diversity of people and international community. I feel at my best when I can combine both - face-to-face communication and e-environment opportunities in a dynamic development.</p>
+							<p class="card-text">I am a recent graduate of Riga Coding School, Basics of Programming courses where I gained valuable knowledge in basics of C#, Java, html, JavaScript, jQuery, Vue, just to name a few. I am eager to be challenged in order to grow and further improve my IT skills. Previously I have maintained a personal blog for my expat years in Denmark, as well as some small projects of my own creation for personal events, however I never fully turned my focus to IT field career-wise until now. I enjoy working with a diversity of people and international community and I feel at my best when I can explore e-environment opportunities in a dynamic development.</p>
 						</div>
 					</div>
 				</div>
@@ -71,7 +73,7 @@
 
 
 		<div class="container">
-			<div class="row">
+			<div class="row" id="selectors">
 				<div class="column" onclick="on('overlayEducation')">
 					Education
 				</div>
@@ -116,7 +118,7 @@
 		</div>
 
 		<div id="overlayEducation" class="overlay" onclick="off()">
-			<div style="text-align: center" style="margin-bottom: 50px;"><b>2014–2016</b>
+			<div style="text-align: center" style="margin-bottom: 60px;"><b>2014–2016</b>
 				<br> Bachelor Degree in International Marketing and Advertising
 				<br>
 				Rīga Stradiņš University, Riga (Latvia)
@@ -220,7 +222,7 @@
 
 <div class="container">
 	<div id="overlaySkill" class="overlay" onclick="off()">
-		<div class="card-group">
+		<div class="card-group" id="skillCards">
 			<div class="card">
 				<img class="card-img-top mx-auto d-block" src="communication.PNG" alt="Communication">
 				<div class="card-body">
@@ -248,7 +250,7 @@
 				<img class="card-img-top mx-auto d-block" src="logic.PNG" alt="logic">
 				<div class="card-body">
 					<h5 class="card-title"><b>Progress</b></h5>
-					<p class="card-text">If observing places for improvement, often forming and suggesting ideas for it.</p>
+					<p class="card-text" style="margin-bottom: 50px;">If observing places for improvement, often forming and suggesting ideas for it.</p>
 				</div>
 			</div>
 		</div>
@@ -268,7 +270,7 @@
 			<div class="card">
 			</div>
 		</div>
-		<div class="card-deck">
+		<div class="card-deck" id="cardLang">
 			<div class="card">
 				<div class="card-body">
 					<h5 class="card-title"><b>English</b></h5>
@@ -340,7 +342,7 @@
 			<div class="card w-100">
 				<div class="card-body">
 					<h5 class="card-title"><b>Voluntary experience</b></h5>
-					<div class="card-text">
+					<div class="card-text" style="margin-bottom: 50px;">
 						Copenhagen Volunteers (2010-2012): event coordinator, assistant, guide
 						<br>
 						Copenhagen Post (2011): distribution assistant, event assistant
@@ -354,66 +356,71 @@
 </div>
 
 <div id="overlayWhile" class="overlay" onclick="off()">
-		<div class="big-container">
-			<div class="heading">
-				<h1 class="title">3072</h1>
-				<div class="score-container">0</div>
-			</div>
-			<p class="game-intro">Join the numbers and get to the <strong>3072 tile!</strong></p>
 
-			<div class="game-container">
-				<div class="game-message">
-					<p></p>
-					<div class="lower">
-						<a class="retry-button">Close</a>
-					</div>
-				</div>
+	<div id="errorMsg"> Sorry, this content is not available on your screen parameters.</div>
+	<div class="big-container">
+		<div class="heading">
+			<h1 class="title">3072</h1>
+			<div class="score-container">0</div>
+		</div>
+		<p class="game-intro">Join the numbers and get to the <strong>3072 tile!</strong></p>
 
-				<div class="grid-container">
-					<div class="grid-row">
-						<div class="grid-cell"></div>
-						<div class="grid-cell"></div>
-						<div class="grid-cell"></div>
-						<div class="grid-cell"></div>
-					</div>
-					<div class="grid-row">
-						<div class="grid-cell"></div>
-						<div class="grid-cell"></div>
-						<div class="grid-cell"></div>
-						<div class="grid-cell"></div>
-					</div>
-					<div class="grid-row">
-						<div class="grid-cell"></div>
-						<div class="grid-cell"></div>
-						<div class="grid-cell"></div>
-						<div class="grid-cell"></div>
-					</div>
-					<div class="grid-row">
-						<div class="grid-cell"></div>
-						<div class="grid-cell"></div>
-						<div class="grid-cell"></div>
-						<div class="grid-cell"></div>
-					</div>
-				</div>
-
-				<div class="tile-container">
-
+		<div class="game-container">
+			<div class="game-message">
+				<p></p>
+				<div class="lower">
+					<a class="retry-button">Close</a>
 				</div>
 			</div>
 
-  <hr>
-  <p>
-  Code-source: <a href="https://codepen.io/camsong/pen/wcKrg" target="_blank">https://codepen.io/camsong/pen/wcKrg</a>
-  <br>
-  Altered by: Santa Ozolina
+			<div class="grid-container">
+				<div class="grid-row">
+					<div class="grid-cell"></div>
+					<div class="grid-cell"></div>
+					<div class="grid-cell"></div>
+					<div class="grid-cell"></div>
+				</div>
+				<div class="grid-row">
+					<div class="grid-cell"></div>
+					<div class="grid-cell"></div>
+					<div class="grid-cell"></div>
+					<div class="grid-cell"></div>
+				</div>
+				<div class="grid-row">
+					<div class="grid-cell"></div>
+					<div class="grid-cell"></div>
+					<div class="grid-cell"></div>
+					<div class="grid-cell"></div>
+				</div>
+				<div class="grid-row">
+					<div class="grid-cell"></div>
+					<div class="grid-cell"></div>
+					<div class="grid-cell"></div>
+					<div class="grid-cell"></div>
+				</div>
+			</div>
 
-</p>
-</div>
-<script src='https://cdnjs.cloudflare.com/ajax/libs/hammer.js/1.0.6/hammer.min.js'></script>
+			<div class="tile-container">
+
+			</div>
+		</div>
+
+		<hr>
+		<p>
+			Code-source: <a href="https://codepen.io/camsong/pen/wcKrg" target="_blank">https://codepen.io/camsong/pen/wcKrg</a>
+			<br>
+			Altered by: Santa Ozolina
+
+		</p>
+	</div>
 
 
 
-<script  src="./game.js"></script>
+	<script src='https://cdnjs.cloudflare.com/ajax/libs/hammer.js/1.0.6/hammer.min.js'></script>
+
+
+
+	<script  src="./game.js"></script>
 
 </div>
 
@@ -423,7 +430,7 @@
 <br>
 
 <div class="container" style="width: 79%;">
-<button type="button" class="btn btn-secondary btn-lg btn-block"><a href="CV-Santa-Ozolina-EN.pdf">Download CV in pdf</a></button>
+	<button type="button" class="btn btn-secondary btn-lg btn-block"><a href="CV-Santa-Ozolina-EN.pdf" target="_blank">Download CV in pdf</a></button>
 </div>
 
 <br>
