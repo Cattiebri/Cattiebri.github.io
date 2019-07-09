@@ -11,7 +11,7 @@ body{
 }
 
 
-.vissTeksts{
+.all-text{
 	margin: 0 auto;
 	padding: 10px 20px 10px 20px;
 	width: 80%;
@@ -36,8 +36,7 @@ body{
 	width: unset;
 }
 
-#skillCards{
-	/*margin: auto 100px;*/
+#skill-cards{
 	min-width: 270px;
 }
 
@@ -92,13 +91,13 @@ body{
 	cursor: pointer; 
 	overflow-y: scroll;
 }
-.skillKlase{
+.skill{
 	float: left;
 	margin: 3px;
 	align-items: inherit;
 }
 
-#myContacts{
+.collapse-format{
 	width: 100%;
 	margin: auto;
 	padding: auto;
@@ -108,18 +107,18 @@ body{
 	transition: height 400ms;
 }
 
-.gitLink{
+.git-link{
 	text-decoration: none;
 }
 
-.betweenerLight{
+.betweener-light{
 	text-align: center;
 	margin: 3px auto;
 	background-color: darkred;
 	height: 1px;
 	width: 30%;
 }
-.betweenerBold{
+.betweener-bold{
 	text-align: center;
 	margin: 2px auto;
 	background-color: orange;
@@ -130,12 +129,12 @@ body{
 	display: flex;
 	justify-content: center;
 }
-.saraksts{
+.list-items{
 	display: flex;
 	align-items: start;
 	flex-direction: column;
 }
-.contactContainer{
+.contact-container{
 	padding: 0 30px;
 }
 
@@ -187,11 +186,46 @@ button:focus {outline:0;}
 	font-weight: bold;
 }
 
-#errorMsg{
+#error-msg{
 	display: none;
 }
 
+.font-size-25px{
+	font-size: 25px;
+}
 
+.width-20px{
+	width: 20px;
+}
+
+.display-none{
+	display: none;
+}
+
+.color-inherit{
+	color: inherit;
+}
+
+.margin-bottom-60px{
+	margin-bottom: 60px;
+}
+
+.width-79{
+	width: 79%;
+}
+
+.margin-bottom-10px{
+	margin-bottom: 10px;
+}
+
+.width-50{
+	width: 50%;
+}
+
+.message-container{
+	    display: flex;
+    justify-content: center;
+}
 
 
 a:link {
@@ -226,80 +260,42 @@ footer{
 }
 
 
-/*@media only screen and (max-width: 360px) {
-	.card-img{
-		max-width: 150px;
-		max-height: 150px;
-		margin: 5px;
+@media only screen and (max-width: 666px){
+	#error-msg{
+		display: block;
+		margin-top: 60px;
 	}
-	.mb-3{
-		margin-top: 80px;
-		max-width: 95%;
-		font-size: 15px;
+	.big-container{
+		display: none;
 	}
-}/*
-*/
-	/*@media only screen and (max-width: 375px){
-		body{
-			/*background-color: yellow;*/
-		/*}
-		}*/
 
-		
-
-		@media only screen and (max-width: 666px){
-			#errorMsg{
-				display: block;
-				margin-top: 60px;
-			}
-			.big-container{
-				display: none;
-			}
-
-		}
-		@media only screen and (max-width: 800px){
-			#cardLang {
-				flex-direction: column;
-			}
-			#bildeMe{
-				margin: auto;
-			}
-			#aboutMeCont{
-				flex-direction: column;
-			}
-			#coverCont{
-				margin-top: 100px;
-			}
-			
-		}
-
-		@media only screen and (max-width: 1080px){
-			.column{
-				flex: 0 0 45%;
-			}
-			body{
-				margin: 0;
-				padding: 0;
-			}
-
-			#skillCards {
-				flex-direction: column;
-				/*				width: 100%;*/
-			}
-		}
-	/*@media only screen and (max-width: 1440px){
-		body{*/
-			/*background-color: orange;*/
-		/*}
-		.column{
-			flex: 0 0 30%;
-		}
+}
+@media only screen and (max-width: 800px){
+	#cardLang {
+		flex-direction: column;
 	}
-	@media only screen and (max-width: 2560px){
-		body{*/
-			/*background-color: purple;*/
-	/*	}
-		.column{
-			flex: 1 0 30%;
-		}
-	}*/
+	#faceMe{
+		margin: auto;
+	}
+	#aboutMeCont{
+		flex-direction: column;
+	}
+	#coverCont{
+		margin-top: 100px;
+	}
+
+}
+
+@media only screen and (max-width: 1080px){
+	.column{
+		flex: 0 0 45%;
+	}
+	body{
+		margin: 0;
+		padding: 0;
+	}
+
+	#skill-cards {
+		flex-direction: column;
+	}
+}

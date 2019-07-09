@@ -13,7 +13,7 @@
 
 	<link href="https://fonts.googleapis.com/css?family=Exo&display=swap" rel="stylesheet">
 
-	<link rel="icon" type="image/png" href="seja.png">
+	<link rel="icon" type="image/png" href="face.png">
 
 	<script
 	src="https://code.jquery.com/jquery-3.4.1.min.js"
@@ -23,6 +23,8 @@
 	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
 
 	<script src="https://kit.fontawesome.com/2d7a81b702.js"></script>
+
+	<script src="https://smtpjs.com/v3/smtp.js"></script>
 
 	<script type="text/javascript" src="aboutMe.js"></script>
 
@@ -46,24 +48,24 @@
 					<a class="nav-link" target="_blank" href="./CV-Santa-Ozolina-EN.pdf">Download CV</a>
 				</li>
 				<li class="nav-item">
-					<a class="nav-link" href="#myContacts" data-toggle="collapse" data-target="#myContacts" onclick="collapse()" >Contacts</a>
+					<a class="nav-link" href="#my-contacts" data-toggle="collapse" data-target="#my-contacts" onclick="collapse()" >Contacts</a>
 				</li>
 			</ul>
 
 		</div>
 	</nav>
 
-	<div class="vissTeksts">
+	<div class="all-text">
 
 		<div class="container-fluid p-0">
 			<div class="card mb-3" id="coverCont">
 				<div class="row no-gutters" id="aboutMeCont">
 					<div class="col-md-4">
-						<img src="seja.png" class="card-img" id="bildeMe" alt="faceOfSanta">
+						<img src="face.png" class="card-img" id="faceMe" alt="faceOfSanta">
 					</div>
 					<div class="col-md-8">
 						<div class="card-body">
-							<h5 class="card-title" style="font-size: 25px;"><b>About me</b></h5>
+							<h5 class="card-title font-size-25px"><b>About me</b></h5>
 							<p class="card-text">I am a recent graduate of Riga Coding School, Basics of Programming courses where I gained valuable knowledge in basics of C#, Java, html, JavaScript, jQuery, Vue, just to name a few. I am eager to be challenged in order to grow and further improve my IT skills. Previously I have maintained a personal blog for my expat years in Denmark, as well as some small projects of my own creation for personal events, however I never fully turned my focus to IT field career-wise until now. I enjoy working with a diversity of people and international community and I feel at my best when I can explore e-environment opportunities in a dynamic development.</p>
 						</div>
 					</div>
@@ -86,14 +88,14 @@
 				<div class="column" onclick="on('overlayLang')">
 					Languages
 				</div>
-				<a class="column gitLink" href="https://github.com/Cattiebri" target="_blank" title="External link: https://github.com/Cattiebri">
+				<a class="column git-link" href="https://github.com/Cattiebri" target="_blank" title="External link: https://github.com/Cattiebri">
 					Previous projects
 				</a>
 				<div class="column" onclick="showtick()">
 					<span id="licence"> Driver's licence</span>
-					<div id="tick" style="display: none;">
+					<div id="tick" class="display-none">
 						<span>Category: B </span>
-						<img src="tick.png" alt="mySkill" style="width:20px;">
+						<img class="width-20px" src="tick.png" alt="mySkill">
 					</div>
 				</div>
 				<div class="column" onclick="on('overlayAdditional')">
@@ -102,9 +104,10 @@
 				<div class="column" onclick="on('overlayWhile')">
 					While considering...
 				</div>
-				<button type="button" class="column collapsed" id="contacts" data-toggle="collapse" data-target="#myContacts" style="color: inherit; "> Contacts</button>
-				<div class="container-fluid contactContainer"> 
-					<div class="collapse" id="myContacts"> <i class="far fa-user"></i> Santa Ozoliņa (Ms)
+				<button type="button" class="column collapsed color-inherit" id="contacts" data-toggle="collapse" data-target="#my-contacts"> Contacts
+				</button>
+				<div class="container-fluid contact-container"> 
+					<div class="collapse collapse-format" id="my-contacts"> <i class="far fa-user"></i> Santa Ozoliņa (Ms)
 						<br>
 						<i class="fas fa-phone-alt"></i> +371 2377 2474
 						<br>
@@ -118,7 +121,7 @@
 		</div>
 
 		<div id="overlayEducation" class="overlay" onclick="off()">
-			<div style="text-align: center" style="margin-bottom: 60px;">
+			<div class="text-center margin-bottom-60px">
 				<br>
 				<b>2014–2016</b>
 				<br> Bachelor Degree in International Marketing and Advertising
@@ -146,7 +149,7 @@
 		</div>
 
 		<div id="overlayExp" class="overlay" onclick="off()">
-			<div style="margin-bottom: 50px;">
+			<div class="margin-bottom-60px">
 				<div class="card w-100">
 					<div class="card-body">
 						<h5 class="card-title">
@@ -161,7 +164,7 @@
 								Administrating processes of EU Project selection:
 								<br>
 								<div  class="container bulleti">
-									<ul class="saraksts">
+									<ul class="list-items">
 										<li>EU Project selection</li>
 										<li>EU Project evaluation</li>
 										<li>Customer consulting</li>
@@ -180,7 +183,7 @@
 									<br>
 									Administrating processes of International Student Department:
 									<div class="container bulleti">
-										<ul class="saraksts">
+										<ul class="list-items">
 											<li>Coordinating Scholarship and Tuition Fee Discount awarding processes</li>
 											<li>Preparing and adjusting Study Contracts, including Tuition fee calculations</li>
 											<li>Supervising payment schedules</li>
@@ -201,7 +204,7 @@
 									Ekodoma Ltd., Riga (Latvia)
 									<br>
 									<div  class="container bulleti">
-										<ul class="saraksts">
+										<ul class="list-items">
 											<li>Managing corporate events</li>
 											<li>Coordinating team-building events</li>
 											<li>Processing correspondence</li>
@@ -227,7 +230,7 @@
 
 		<div class="container">
 			<div id="overlaySkill" class="overlay" onclick="off()">
-				<div class="card-group" id="skillCards">
+				<div class="card-group" id="skill-cards">
 					<div class="card">
 						<img class="card-img-top mx-auto d-block" src="communication.PNG" alt="Communication">
 						<div class="card-body">
@@ -255,7 +258,7 @@
 						<img class="card-img-top mx-auto d-block" src="logic.PNG" alt="logic">
 						<div class="card-body">
 							<h5 class="card-title"><b>Progress</b></h5>
-							<p class="card-text" style="margin-bottom: 50px;">If observing places for improvement, often forming and suggesting ideas for it.</p>
+							<p class="card-text margin-bottom-60px">If observing places for improvement, often forming and suggesting ideas for it.</p>
 						</div>
 					</div>
 				</div>
@@ -269,7 +272,7 @@
 					</div>
 					<div class="card">
 						<div class="card-body">
-							<h5 class="card-title" style="font-size:24px"><b>Latvian - mother-language</b></h5>
+							<h5 class="card-title font-size-25px"><b>Latvian - mother-language</b></h5>
 						</div>
 					</div>
 					<div class="card">
@@ -347,7 +350,7 @@
 					<div class="card w-100">
 						<div class="card-body">
 							<h5 class="card-title"><b>Voluntary experience</b></h5>
-							<div class="card-text" style="margin-bottom: 50px;">
+							<div class="card-text margin-bottom-60px">
 								Copenhagen Volunteers (2010-2012): event coordinator, assistant, guide
 								<br>
 								Copenhagen Post (2011): distribution assistant, event assistant
@@ -362,7 +365,7 @@
 
 		<div id="overlayWhile" class="overlay" onclick="off()">
 
-			<div id="errorMsg"> Sorry, this content is not available on your screen parameters.</div>
+			<div id="error-msg"> Sorry, this content is not available on your screen parameters.</div>
 			<div class="big-container">
 				<div class="heading">
 					<h1 class="title">3072</h1>
@@ -434,8 +437,36 @@
 		</div>
 		<br>
 
-		<div class="container" style="width: 79%;">
-			<button type="button" class="btn btn-secondary btn-lg btn-block"><a href="CV-Santa-Ozolina-EN.pdf" target="_blank">Download CV in pdf</a></button>
+		<div class="container width-79">
+			<button type="button" class="btn btn-secondary btn-lg btn-block collapsed margin-bottom-10px" data-toggle="collapse" data-target="#send-message">Send message to Santa Ozolina</button>
+		</div>
+
+		<div class="container-fluid contact-container width-79"> 
+			<div class="collapse collapse-format" id="send-message">
+
+				<form id="contact-form">
+					<div class="form-group">
+						<label for="entered-email">Email address</label>
+						<div class="message-container">
+							<input type="email" class="form-control width-50 text-center form-control-success form-control-danger" id="entered-email" aria-describedby="emailHelp" placeholder="Enter your email" onblur="checkEmail(this) " name="email">
+
+
+						</div>
+						<br>
+						<label for="message-text">Your message</label>
+						<div class="message-container">
+							<textarea class="form-control width-50 text-center" id="message-text" rows="3" placeholder="Enter a message" name="message"></textarea>
+						</div>
+					</div>
+
+					<input id="message-button" type="button" disabled class="btn btn-primary" onclick="formData()" value="Send message">
+				</form>
+			</div>
+		</div>
+
+		<br>
+		<div class="container width-79">
+			<button type="button" class="btn btn-secondary btn-lg btn-block margin-bottom-10px"><a href="CV-Santa-Ozolina-EN.pdf" target="_blank">Download CV in pdf</a></button>
 		</div>
 
 		<br>
